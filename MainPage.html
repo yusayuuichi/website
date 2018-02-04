@@ -10,9 +10,9 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbarTop" data-offset="0">
-	<nav id="navbarTop" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<nav id="navbarTop" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
   	<a class="navbar-brand" href="#">
-    	<img src="img/Z.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    	<img src="/Img/Z.png" width="30" height="30" class="d-inline-block align-top" alt="">
 			ZHENSITE
   	</a>
 		
@@ -23,36 +23,32 @@
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<ul class="navbar-nav nav-pills">
 				<li class="nav-item">
-					<a class="nav-link active" href="#Intro">Intro</a>
-				</li>
-				<li class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<a class="nav-link" href="#Resume">Resume</a>
+					<a class="nav-link active" href="#Intro" onclick="checkWidth();">Intro</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#Work">Work</a>
+					<a class="nav-link" href="#Resume" onclick="checkWidth();">Resume</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#LearningDaily">LearningDaily</a>
+					<a class="nav-link" href="#Work" onclick="checkWidth();">Work</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#LearningDaily" onclick="checkWidth();">LearningDaily</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
-
-
-		<div id="Intro" class="container">
-			<h1 style="padding-top: 60px;">Intro</h1>
-			<p style="height: 1000px;">...</p>
-		</div>
-		
+	<div id="context" class="container">
+		<h1 id="Intro">Intro</h1>
+		<p style="height: 1000px;">...</p>
 		<h1 id="Resume">Resume</h1>
 		<p style="height: 1000px;">...</p>
 		<h1 id="Work">Work</h1>
 		<p style="height: 1000px;">...</p>
 		<h1 id="LearningDaily">LearningDaily</h1>
 		<p style="height: 1000px;">...</p>
+	</div>
 
-	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.js"></script>
