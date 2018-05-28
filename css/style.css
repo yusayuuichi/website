@@ -1,8 +1,48 @@
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  position: relative;
+	line-height: 1;
+	position: relative;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+/* personal css*/
 div h1{
 	padding-top: 60px;
+	padding-bottom: 15px;
 }
 
+ul li{
+	list-style: none;
+}
+
+#me{
+	width: 35%;
+	height: 35%;
+	margin: 1em;
+}
+
+.progress{
+	margin-bottom: 15px;
+}
+
+#myJumbotron{
+	padding-bottom: 15px;
+}
