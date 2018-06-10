@@ -3,7 +3,7 @@
 <head>
 	<title>ZhenPage</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -13,7 +13,7 @@
 <body data-spy="scroll" data-target="#navbarTop" data-offset="1">
 	<nav id="navbarTop" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
   	<a class="navbar-brand" href="#">
-    	<img src="/Img/Z.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    	<img src="/Img/Z.png" width="20" height="20" class="d-inline-block align-top" alt="">
 			ZHENSITE
   	</a>
 		
@@ -34,7 +34,10 @@
 					<a class="nav-link" href="#Experience" onclick="checkWidth();">經歷</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#Work" onclick="checkWidth();">工作</a>
+					<a class="nav-link" href="#Work" onclick="checkWidth();">工作項目</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Production" onclick="checkWidth();">相關作品</a>
 				</li>
 			</ul>
 		</div>
@@ -42,13 +45,14 @@
 	
 	<div id="context" class="container-fluid">
 		<div class="jumbotron" id="myJumbotron">
-			<h2 class="display-4">ZHENSITE</h2>
+			<h2 class="display-4 mt-4">ZHENSITE</h2>
 			<p class="lead">程式設計師 ｜ 聯強國際</p>
 			<p class="lead">從後端出發，逐漸走向前端中，亦對深度學習、人工智慧抱有興趣</p>
 			<hr class="my-4">
-			<p><a href="https://codepen.io/yusayuuichi/">我的</a></p>
-			<p><a href="https://github.com/yusayuuichi">我的Git</a></p>
-			<p><a href="">我的instagram</a></p>
+			<p class="lead">相關連結</p>
+			<p><a href="https://github.com/yusayuuichi">Git</a></p>
+			<p><a href="https://codepen.io/yusayuuichi/">CodePen</a></p>
+			<p><a href="https://www.instagram.com/wtz0130/">instagram</a></p>
 		</div>
 		
 		<h1 id="Intro">自介</h1>
@@ -83,13 +87,13 @@
 			
 			<h4>Bootstrap</h4>
 			<div class="progress w-75">
-				<div class="progress-bar" style="width:20%;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+				<div class="progress-bar" style="width:30%;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">30%</div>
 			</div>
 			
 			
 			<h4>Jquery:</h4>
 			<div class="progress w-75">
-				<div class="progress-bar" style="width:15%;" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+				<div class="progress-bar" style="width:30%;" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">30%</div>
 			</div>
 		
 			<h4>Python:</h4>
@@ -146,39 +150,44 @@
 				</div>
 			</div>
 		</section>
-		<h1 id="Work">工作</h1>
+		
+		<h1 id="Work">工作項目</h1>
 		<section class="container-fluid">
 			<div id="accordion">
-  			<div class="card">
+  			<div class="card mb-3 w-50">
     			<div class="card-header" id="headingOne">
       			<h5 class="mb-0">
         			<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          			庫存系統維護開發
+          			庫存模組
         			</button>
       			</h5>
     			</div>
 
     			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       			<div class="card-body">
-        			針對台、陸、港、澳等倉庫料品相關模組功能開發、管理維護
+       				<p>主旨：強化、維護庫存管理系統</p>
+        			<p>針對台、陸、港、澳等倉庫料品相關模組功能開發、管理維護，較少開發。</p>
       			</div>
     			</div>
   			</div>
-				<div class="card">
+  			
+				<div class="card mb-3 w-50">
 					<div class="card-header" id="headingTwo">
 						<h5 class="mb-0">
 							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								電子商務
+								電子商務模組
 							</button>
 						</h5>
 					</div>
 					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 						<div class="card-body">
-							參與經銷商系統對接、接單功能開發
+							<p>主旨：開發與不同經銷商的資料對接、接單功能</p>
+							<p>針對不同經銷商開發專屬的資料對接、接收訂單以及售前、後管理的功能，以開發為主，也時常需要維護。</p>
 						</div>
 					</div>
 				</div>
-				<div class="card">
+				
+				<div class="card mb-3 w-50">
 					<div class="card-header" id="headingThree">
 						<h5 class="mb-0">
 							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -188,21 +197,97 @@
 					</div>
 					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 						<div class="card-body">
-							參與門號系統改版功能開發，現接管維護、強化等工作
+							<p>主旨：參與現有門號系統改版功能開發，現接管維護、強化功能運作等</p>
+							<p>與以往MVC使用SSH2框架不同，採用前後端分離撰寫，對前端的操作性大幅增加，亦減少前端資料面的傳輸，後端資料重組以增加效能</p>
+							<p>亦從此開始重頭學習前端三大語言，奠定基礎。</p>
 						</div>
 					</div>
 				</div>
-				<div class="card">
+				
+				<div class="card mb-3 w-50">
 					<div class="card-header" id="headingFour">
 						<h5 class="mb-0">
 							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-								門號APP
+								門號APP後台開發
 							</button>
 						</h5>
 					</div>
 					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 						<div class="card-body">
-							參與門號APP系統之後台開發、帳號管理相關功能
+							<p>參與門號APP系統之後台開發、帳號管理相關功能</p>
+							<p>待更新</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<h1 id="Production">相關作品</h1>
+		<section class="container-fluid">
+			<button type="button" class="btn btn-primary btn-block mb-3" data-toggle="modal" data-target="#myWebSite">
+  			個人網站
+			</button>
+			
+			<div class="modal fade" id="myWebSite" tabindex="-1" role="dialog" aria-labelledby="myWebSiteTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="myWebSiteTitle">個人網站</h5>
+						</div>
+						<div class="modal-body">
+							<p>作為履歷一環，重零開始學習後使用html、css、js撰寫，並套用jquery、bootstrap等套件進行美化
+							，之後一步步架設並不斷更新。</p>
+							<p>每段落皆使用不同的bootstrap功能進行實作練習，作為本網站的風格</p>
+							<p>更新日期：2018/06/10</p>
+							<a href="https://github.com/yusayuuichi/website">GitHub連結</a>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<button type="button" class="btn btn-primary btn-block mb-3" data-toggle="modal" data-target="#f2eZero">
+  			F2E 前端精神時光屋 - 登入頁面
+			</button>
+			
+			<div class="modal fade" id="f2eZero" tabindex="-1" role="dialog" aria-labelledby="f2eZeroTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="f2eZeroTitle">F2E 前端精神時光屋登入頁面</h5>
+						</div>
+						<div class="modal-body">
+							<p>F2E比賽前一週由六角學院釋出的練習題，提供報名相關的API可供查詢報名是否成功。</p>
+							<p>完成日期：2018/06/03</p>
+							<a href="https://codepen.io/yusayuuichi/pen/jKNZxX">CodePen連結</a>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<button type="button" class="btn btn-primary btn-block mb-3" data-toggle="modal" data-target="#f2eFirst">
+  			F2E 前端精神時光屋 - TodoList實作
+			</button>
+			
+			<div class="modal fade" id="f2eFirst" tabindex="-1" role="dialog" aria-labelledby="f2eFirstTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="f2eFirstTitle">F2E 前端精神時光屋 - TodoList實作</h5>
+						</div>
+						<div class="modal-body">
+							<p>F2E第一週比賽題目，提供TodoList草稿圖，依照草稿圖製作出該畫面，最低要求為完成草稿中一頁CSS架構</p>
+							<p>目前僅能製作出css渲染後的頁面，對js部分尚無涉獵，未來對js相關的語言會再增加掌握度</p>
+							<p>完成日期:2018/06/10</p>
+							<a href="https://codepen.io/yusayuuichi/pen/PaWRvg">CodePen連結</a>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
